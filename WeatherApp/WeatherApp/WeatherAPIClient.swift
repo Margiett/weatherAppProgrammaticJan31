@@ -1,9 +1,9 @@
 //
 //  WeatherAPIClient.swift
-//  WeatherApp
+//  WeatherApp January 31st
 //
 //  Created by Margiett Gil on 1/31/20.
-//  Copyright © 2020 David Rifkin. All rights reserved.
+//  Copyright © 2020 Margiett Gil. All rights reserved.
 //
 
 import Foundation
@@ -11,8 +11,7 @@ import NetworkHelper
 
 struct WeatherAPIClient {
     static func getWeather(lat: Double, long: Double, completion: @escaping (Result<Weather, AppError>) -> () ) {
-        
-        let endpointUrl = "https://api.darksky.net/forecast/\(Secrets.darkSkyKey)/\(lat),\(long)"
+        let endpointUrl = "https://api.darksky.net/forecast/\(lat),\(long)"
         guard let url = URL(string: endpointUrl) else {
             completion(.failure(.badURL(endpointUrl)))
             return

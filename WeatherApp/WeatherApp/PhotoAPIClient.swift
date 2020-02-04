@@ -1,9 +1,9 @@
 //
 //  PhotoAPIClient.swift
-//  WeatherApp
+//  WeatherApp January 31st
 //
 //  Created by Margiett Gil on 1/31/20.
-//  Copyright © 2020 David Rifkin. All rights reserved.
+//  Copyright © 2020 Margiett Gil. All rights reserved.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ struct PhotoAPIClient {
         
         let searchQuery = search.lowercased().addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         
-        let endpointURL = "https://pixabay.com/api/?key=\(Secrets.pixaBayKey)&q=\(searchQuery ?? "dogs")"
+        let endpointURL = "https://pixabay.com/api/?key=&q= \(searchQuery ?? "New Yotk")"
         
         guard let url = URL(string: endpointURL) else {
             completion(.failure(.badURL(endpointURL)))
@@ -38,4 +38,3 @@ struct PhotoAPIClient {
         }
     }
 }
-

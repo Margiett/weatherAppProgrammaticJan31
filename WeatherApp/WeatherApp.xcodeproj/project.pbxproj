@@ -68,14 +68,14 @@
 		548CE050234D33B500B5177D /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				548CE051234D33B500B5177D /* AppDelegate.swift */,
-				548CE053234D33B500B5177D /* SceneDelegate.swift */,
-				548CE065234D33E600B5177D /* ZipCodeHelper.swift */,
+				9F84918D23E4D08B005D67AE /* WeatherSearchView.swift */,
 				9F84918523E4CFE9005D67AE /* WeatherAPIClient.swift */,
 				9F84918723E4D00D005D67AE /* PhotoAPIClient.swift */,
 				9F84918923E4D026005D67AE /* weatherModel.swift */,
 				9F84918B23E4D03C005D67AE /* PictureHitsModel.swift */,
-				9F84918D23E4D08B005D67AE /* WeatherSearchView.swift */,
+				548CE051234D33B500B5177D /* AppDelegate.swift */,
+				548CE053234D33B500B5177D /* SceneDelegate.swift */,
+				548CE065234D33E600B5177D /* ZipCodeHelper.swift */,
 				548CE055234D33B500B5177D /* ViewController.swift */,
 				548CE05C234D33B600B5177D /* LaunchScreen.storyboard */,
 				548CE067234D340700B5177D /* Assets.xcassets */,

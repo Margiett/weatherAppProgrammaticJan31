@@ -28,10 +28,5 @@ struct DailyForecast: Codable {
     let temperatureLow: Double
     let windSpeed: Double
 }
-struct PictureHits: Codable {
-    let hits: [Picture]
-}
-struct Picture: Codable {
-    let largeImageURL: String
-}
+
 
