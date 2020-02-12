@@ -14,7 +14,7 @@ struct PhotoAPIClient {
         
         let searchQuery = search.lowercased().addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         
-        let endpointURL = "https://pixabay.com/api/?key=&q= \(searchQuery ?? "New Yotk")"
+        let endpointURL = "https://pixabay.com/api/?key=15170253-dbcc269111030bd8db49cda4c&q=\(search.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)"
         
         guard let url = URL(string: endpointURL) else {
             completion(.failure(.badURL(endpointURL)))

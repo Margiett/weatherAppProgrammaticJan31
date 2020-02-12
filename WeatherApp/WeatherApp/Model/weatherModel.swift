@@ -8,9 +8,9 @@
 
 import Foundation
 struct Weather : Codable {
-    var latitude: Double
-    var longitude: Double
-    let timezone: String
+//    var latitude: Double
+//    var longitude: Double
+//    let timezone: String
     let daily: Daily
 }
 struct Daily: Codable {

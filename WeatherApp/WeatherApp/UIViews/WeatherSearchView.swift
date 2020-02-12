@@ -13,7 +13,7 @@ class WeatherSearchView: UIView {
         
     public var cityNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Your city's Weekly Forecast"
+        label.text = "The Weather channel"
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         return label
@@ -102,7 +102,7 @@ class WeatherSearchView: UIView {
             textField.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 20),
             textField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 100),
             textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -100),
-            textField.heightAnchor.constraint(equalToConstant: 300)
+            textField.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 
